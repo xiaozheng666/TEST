@@ -26,7 +26,7 @@ flags.DEFINE_boolean("is_train", True, "True for training, False for testing [Fa
 flags.DEFINE_boolean("is_crop", True, "True for training, False for testing [False]")
 flags.DEFINE_boolean("visualize",False , "True for visualizing, False for nothing [False]")
 FLAGS = flags.FLAGS
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 def main(_):
   pp.pprint(flags.FLAGS.__flags)
